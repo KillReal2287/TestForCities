@@ -1,6 +1,5 @@
 package org.example.models;
 
-import java.time.Year;
 
 public class City {
     private String name;
@@ -58,7 +57,8 @@ public class City {
     }
 
     public City(String name, String region, String district, Integer population){
-        new City(name, region, district, population,"не указано");
+        this(name, region, district, population,"не указано");
+
     }
 
     @Override
